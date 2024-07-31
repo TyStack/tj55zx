@@ -116,6 +116,7 @@ local sb__jiahuo=fk.CreateTriggerSkill{
 -- 嫁祸 舆论>=4 副技能
 local sb__jiahuoAudio = fk.CreateTriggerSkill{
   name = "#sb__jiahuoAudio",
+  mute=true,visible=false,
   anim_type = "defensive",
   events={fk.TargetConfirming,},
   can_trigger = function(self, event, target, player, data)
