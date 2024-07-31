@@ -115,7 +115,7 @@ local sb__jiahuo=fk.CreateTriggerSkill{
 
 -- 嫁祸 舆论>=4 副技能
 local sb__jiahuoAudio = fk.CreateTriggerSkill{
-  name = "sb__jiahuoAudio",
+  name = "#sb__jiahuoAudio",
   anim_type = "defensive",
   events={fk.TargetConfirming,},
   can_trigger = function(self, event, target, player, data)
@@ -138,7 +138,8 @@ Fk:loadTranslationTable{
     ["illustrator:sb__school"] = "天津市政府",
     ["sb__jiahuo"]="嫁祸",
     [":sb__jiahuo"]="当你成为任意牌的目标时，你可以将一名角色作为此牌的目标，同时你获得一颗【舆论】标记。当【舆论】数量大于等于4时，每张杀对你造成X-2点伤害（X为你手中【舆论】的数量。当【舆论】数量大于等于8时，你直接被杀死。",
-    ["#sb__jiahuo-target"]="选择一名角色作为你转移伤害的对象。同时选择一张牌，这张牌不会有任何效果（扣除或使用）。"
+    ["#sb__jiahuo-target"]="选择一名角色作为你转移伤害的对象。同时选择一张牌，这张牌不会有任何效果（扣除或使用）。",
+    ["@yulun"]="舆论"
   }
 
 
